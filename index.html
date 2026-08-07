@@ -153,10 +153,15 @@
       position: relative;
       padding: 92px 0 62px;
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
-      gap: 18px;
+      grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+      gap: 28px;
       align-items: center;
-      overflow: visible;
+      overflow: hidden;
+    }
+
+    .hero > div:first-child {
+      position: relative;
+      z-index: 3;
     }
 
     .eyebrow {
@@ -242,47 +247,53 @@
 
     .hero-visual {
       position: relative;
-      min-height: 600px;
-      overflow: visible;
+      z-index: 1;
+      min-height: 560px;
+      overflow: hidden;
       background: transparent;
-      isolation: isolate;
       pointer-events: none;
     }
 
     .hero-visual::before {
       content: "";
       position: absolute;
-      inset: 4% -10% 0 -24%;
-      z-index: 1;
+      inset: 0;
+      z-index: 2;
       pointer-events: none;
       background:
-        radial-gradient(circle at 68% 42%, rgba(54, 169, 255, 0.2), transparent 38%),
-        linear-gradient(90deg, var(--bg) 0%, rgba(5, 11, 22, 0.58) 17%, transparent 46%),
-        linear-gradient(180deg, transparent 62%, var(--bg) 100%);
+        linear-gradient(90deg, var(--bg) 0%, rgba(5, 11, 22, 0.72) 10%, transparent 38%),
+        linear-gradient(180deg, transparent 68%, var(--bg) 100%);
     }
 
     .hero-visual img {
       position: absolute;
-      inset: -2% -8% -4% -18%;
-      z-index: 0;
-      width: 126%;
-      height: 108%;
-      min-height: 600px;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
       display: block;
       object-fit: cover;
-      object-position: 70% center;
+      object-position: 72% center;
       border: 0;
       border-radius: 0;
       box-shadow: none;
-      filter: saturate(0.96) contrast(1.03);
-      -webkit-mask-image:
-        linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.18) 12%, black 42%, black 82%, transparent 100%),
-        linear-gradient(180deg, transparent 0%, black 10%, black 82%, transparent 100%);
-      -webkit-mask-composite: source-in;
-      mask-image:
-        linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.18) 12%, black 42%, black 82%, transparent 100%),
-        linear-gradient(180deg, transparent 0%, black 10%, black 82%, transparent 100%);
-      mask-composite: intersect;
+      filter: saturate(0.98) contrast(1.03);
+      -webkit-mask-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 0, 0, 0.22) 12%,
+        black 38%,
+        black 92%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 0, 0, 0.22) 12%,
+        black 38%,
+        black 92%,
+        transparent 100%
+      );
     }
 
     .hero-brand {
@@ -726,10 +737,9 @@
       </div>
       <aside class="hero-visual" aria-label="Anthony Climo, IT and cloud support apprentice">
         <img
-          src="Anthony-Climo-TCD-Hero.png"
+          src="Anthony-Climo-TCD-Tech-Hero.png"
           alt="Anthony Climo wearing Talented Creative Design TCD branded clothing in a technology workspace"
         />
-        <div class="hero-brand"><strong>Talented Creative Design</strong> • TCD</div>
       </aside>
     </div>
 
