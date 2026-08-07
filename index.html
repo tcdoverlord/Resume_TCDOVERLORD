@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -236,6 +238,60 @@
       color: var(--muted);
     }
 
+    .hero-visual {
+      position: relative;
+      min-height: 540px;
+      overflow: hidden;
+      border: 1px solid rgba(80, 229, 255, 0.28);
+      border-radius: 26px;
+      background: #06111f;
+      box-shadow:
+        0 26px 80px rgba(0, 0, 0, 0.42),
+        0 0 45px rgba(54, 169, 255, 0.12);
+      isolation: isolate;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(3, 10, 20, 0.65) 0%, transparent 30%),
+        linear-gradient(180deg, transparent 62%, rgba(3, 10, 20, 0.55) 100%);
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 540px;
+      display: block;
+      object-fit: cover;
+      object-position: 70% center;
+    }
+
+    .hero-brand {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      z-index: 3;
+      padding: 11px 14px;
+      border: 1px solid rgba(119, 242, 161, 0.34);
+      border-radius: 12px;
+      color: #dfffea;
+      background: rgba(3, 14, 27, 0.78);
+      backdrop-filter: blur(12px);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .hero-brand strong {
+      color: var(--green);
+    }
+
     .target-list {
       margin: 20px 0 0;
       display: grid;
@@ -361,6 +417,54 @@
     .card p {
       margin: 0;
       color: #b8c8d8;
+    }
+
+    .project-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 17px;
+    }
+
+    .project-stack span {
+      padding: 5px 8px;
+      border: 1px solid rgba(80, 229, 255, 0.2);
+      border-radius: 999px;
+      color: #cfe7f7;
+      background: rgba(4, 17, 32, 0.55);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 18px;
+      color: var(--cyan);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      color: var(--green);
+    }
+
+    .project-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      height: 34px;
+      margin-bottom: 14px;
+      padding: 0 10px;
+      border: 1px solid rgba(80, 229, 255, 0.36);
+      border-radius: 9px;
+      color: var(--cyan);
+      background: rgba(4, 20, 38, 0.72);
+      font-size: 0.85rem;
+      font-weight: 950;
+      letter-spacing: 0.08em;
     }
 
     .timeline {
@@ -509,7 +613,8 @@
       body::before,
       .topbar,
       .hero-actions,
-      .fit-card {
+      .fit-card,
+      .hero-visual {
         display: none;
       }
 
@@ -615,27 +720,12 @@
           </a>
         </div>
       </div>
-
-      <aside class="fit-card" aria-label="Target role">
-        <div class="status">
-          <span class="dot"></span>
-          Open to opportunity
-        </div>
-
-        <h2>The opportunity I am looking for</h2>
-
-        <p>
-          A remote apprenticeship, trainee, or entry-level support position where I can help users,
-          support a technical team, follow established procedures, document solutions, and build
-          real-world experience under experienced leadership.
-        </p>
-
-        <div class="target-list">
-          <div class="target">IT Support Apprentice</div>
-          <div class="target">Remote Technical Support Trainee</div>
-          <div class="target">Cloud Support Trainee</div>
-          <div class="target">Junior Infrastructure Support</div>
-        </div>
+      <aside class="hero-visual" aria-label="Anthony Climo, IT and cloud support apprentice">
+        <img
+          src="Anthony-Climo-TCD-Hero.png"
+          alt="Anthony Climo wearing Talented Creative Design TCD branded clothing in a technology workspace"
+        />
+        <div class="hero-brand"><strong>Talented Creative Design</strong> • TCD</div>
       </aside>
     </div>
 
@@ -722,40 +812,95 @@
 
         <div class="project-grid">
           <article class="card">
-            <div class="tag">Cloud Infrastructure</div>
+            <div class="project-number">01</div>
+            <div class="tag">AWS Capstone • Infrastructure</div>
             <h3>Creator Automation Infrastructure Lab</h3>
             <p>
-              A Windows, Linux, and Raspberry Pi lab used to practice SSH, Tailscale, Git,
-              system administration, backup planning, troubleshooting, event-driven architecture,
-              and AWS migration design.
+              A multi-device home lab connecting Windows, Linux, and Raspberry Pi systems through
+              SSH and Tailscale. It documents troubleshooting, Git workflows, backup and recovery
+              planning, and a future path from local infrastructure to AWS.
             </p>
+            <div class="project-stack">
+              <span>Linux</span><span>Raspberry Pi</span><span>SSH</span>
+              <span>Tailscale</span><span>Git</span><span>AWS</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/Creator-Automation-Infrastructure-Lab" target="_blank" rel="noopener">View repository ↗</a>
           </article>
 
           <article class="card">
-            <div class="tag">PowerShell</div>
-            <h3>Safe System Maintenance Tool</h3>
+            <div class="project-number">02</div>
+            <div class="tag">Python • Desktop Utility</div>
+            <h3>HEIC to JPG Converter for Windows</h3>
             <p>
-              A Windows maintenance and diagnostic utility designed around safe changes,
-              logging, system checks, security awareness, and recovery.
+              An offline Windows utility for converting iPhone HEIC and HEIF photos to JPG in
+              batches with safe file naming, metadata preservation where possible, and local logs.
             </p>
+            <div class="project-stack">
+              <span>Python</span><span>Windows</span><span>Image Conversion</span>
+              <span>Batch Processing</span><span>Logging</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/heic-to-jpg-converter-windows" target="_blank" rel="noopener">View repository ↗</a>
           </article>
 
           <article class="card">
-            <div class="tag">Windows Support</div>
-            <h3>Bluetooth and Phone Link Doctor</h3>
+            <div class="project-number">03</div>
+            <div class="tag">PowerShell • Windows Support</div>
+            <h3>Windows Bluetooth &amp; PhoneLink Doctor</h3>
             <p>
-              A troubleshooting utility for Bluetooth, audio, microphone, and Phone Link
-              issues with simplified run, repair, and reset workflows.
+              A PowerShell troubleshooting toolkit for diagnosing and repairing Windows Bluetooth,
+              audio, microphone, and Microsoft Phone Link problems with guided repair and reset workflows.
             </p>
+            <div class="project-stack">
+              <span>PowerShell</span><span>Windows</span><span>Diagnostics</span>
+              <span>Bluetooth</span><span>Technical Support</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/Windows-Bluetooth-PhoneLink-Doctor" target="_blank" rel="noopener">View repository ↗</a>
           </article>
 
           <article class="card">
-            <div class="tag">Developer Workflow</div>
-            <h3>GitForge</h3>
+            <div class="project-number">04</div>
+            <div class="tag">PowerShell • Safety Utility</div>
+            <h3>SafeUSB Eject</h3>
             <p>
-              A PowerShell-based workflow for initializing projects, committing files,
-              creating GitHub repositories, and publishing work with repeatable commands.
+              A safety-first Windows tool that detects programs locking a removable USB drive,
+              closes them carefully, verifies the drive is unlocked, and then requests a safe eject.
             </p>
+            <div class="project-stack">
+              <span>PowerShell</span><span>Windows</span><span>USB</span>
+              <span>Process Detection</span><span>Safe Automation</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/SafeUSB-Eject-by-TCDOVERLORD" target="_blank" rel="noopener">View repository ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="project-number">05</div>
+            <div class="tag">PowerShell • Virtualization</div>
+            <h3>Hyper-V Backup Bootstrap</h3>
+            <p>
+              A release-safe Hyper-V backup framework with virtual-machine selection, destination
+              selection, controlled export, verification, and recovery-minded backup workflows.
+            </p>
+            <div class="project-stack">
+              <span>PowerShell</span><span>Hyper-V</span><span>Virtual Machines</span>
+              <span>Backup</span><span>Recovery</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/hyperv-backup-bootstrap" target="_blank" rel="noopener">View repository ↗</a>
+          </article>
+
+          <article class="card">
+            <div class="project-number">06</div>
+            <div class="tag">PowerShell • OBS Security</div>
+            <h3>OBS Safe Launch Utility</h3>
+            <p>
+              A security-focused OBS Studio launcher that validates plugin integrity, checks the
+              installation, applies temporary firewall protections, logs security events, launches
+              OBS safely, and removes temporary rules when the session ends.
+            </p>
+            <div class="project-stack">
+              <span>PowerShell</span><span>Windows</span><span>OBS Studio</span>
+              <span>SHA256</span><span>Firewall</span><span>Security Logging</span>
+            </div>
+            <a class="project-link" href="https://github.com/tcdoverlord/obs-safe-launch-utility" target="_blank" rel="noopener">View repository ↗</a>
           </article>
         </div>
       </div>
