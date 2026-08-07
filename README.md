@@ -1,12 +1,21 @@
-﻿# TCDOVERLORD Technical Portfolio
+﻿@'
+# TCDOVERLORD Technical Résumé
 
-My technical portfolio and interview resume.
+A single-page technical résumé and portfolio hosted with GitHub Pages.
 
-## Live website
+## Focus Areas
+
+- Cloud infrastructure
+- Linux administration
+- PowerShell and Bash automation
+- Secure networking
+- AWS architecture planning
+- Git and GitHub workflows
+- Raspberry Pi systems
+- Technical operations
+- Governed AI systems
+
+## Live Site
 
 https://tcdoverlord.github.io/Resume_TCDOVERLORD/
-
-## Files
-
-- `TCDOVERLORD_Technical_Portfolio.html` — editable source
-- `index.html` — GitHub Pages website entry file
+'@ | Set-Content -Path README.md -Encoding UTF8
