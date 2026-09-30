@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TCDOVERLORD - AI engineering, local AI platforms, LLM application architecture, automation, Windows and Linux technical support, GitHub development, and cloud fundamentals.">
-  <meta name="keywords" content="TCDOVERLORD, AI engineering, LLM architecture, local AI, LocalAI, Ollama, Qwen, AI agents, prompt engineering, AI memory, AI governance, Docker, Python, PowerShell, Windows, Linux, GitHub, AWS, automation">
+  <meta name="description" content="TCDOVERLORD — AI engineering, local AI platforms, LLM application architecture, automation, Windows and Linux systems, DevOps, security tooling, and cloud development.">
+  <meta name="keywords" content="TCDOVERLORD, AI engineering, local AI, LocalAI, Ollama, Qwen, LLM application architecture, AI agents, AI memory, AI governance, Docker, Python, PowerShell, Windows, Linux, GitHub, AWS, DevOps, cybersecurity, automation, OBS, Hyper-V, DynamoDB">
   <meta name="author" content="TCDOVERLORD">
-  <title>TCDOVERLORD | AI Systems, Technical Support & Automation</title>
+  <title>TCDOVERLORD | AI Engineering, Local AI & Systems Automation</title>
   <style>
     :root {
       --ink: #08172d;
@@ -202,6 +202,15 @@
     .card .tag { color: var(--green); font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 900; }
     .card h3 { margin: 9px 0; font-size: 1.25rem; }
     .card p { color: #b7c9da; margin: 0; }
+    .card-link { display: inline-flex; margin-top: 15px; color: var(--cyan); text-decoration: none; font-weight: 850; font-size: .86rem; }
+    .card-link:hover { color: var(--green); }
+    .portfolio-note { margin-top: 18px; color: #8fa6bd; font-size: .9rem; }
+    .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 26px; }
+    .metric { padding: 17px; border: 1px solid var(--line); border-radius: 14px; background: rgba(8, 29, 53, .64); }
+    .metric strong { display:block; color: var(--cyan); font-size: 1.35rem; line-height:1; margin-bottom:6px; }
+    .metric span { color:#aebfd2; font-size:.78rem; text-transform:uppercase; letter-spacing:.1em; font-weight:800; }
+    @media (max-width: 850px) { .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 520px) { .metric-grid { grid-template-columns: 1fr 1fr; } }
 
     .timeline { border-left: 1px solid var(--line); margin-left: 9px; }
     .role { position: relative; padding: 0 0 34px 28px; }
@@ -306,7 +315,7 @@
         <div class="eyebrow">AI Engineering • Local AI • Automation • Technical Operations</div>
         <h1>TCD<span>OVERLORD</span></h1>
         <h2>AI Engineering | Local AI Platforms | LLM Application Architecture | Automation | Technical Support</h2>
-        <p class="hero-copy">Independent technical builder developing practical AI systems and infrastructure—from governed AI architecture and local LLM platforms to Docker-based services, GitHub automation, Windows/Linux tooling, and modular applications designed to bring AI and software projects together.</p>
+        <p class="hero-copy">Independent technical builder developing practical AI systems and infrastructure—from local LLM platforms and governed AI architecture to Docker services, DevOps automation, Windows/Linux utilities, security tooling, and modular software projects.</p>
         <div class="hero-actions"><a class="button" href="https://github.com/tcdoverlord" target="_blank" rel="noopener">Explore My GitHub ↗</a></div>
       </div>
       <aside class="status-card" aria-label="Current professional status">
@@ -315,11 +324,20 @@
         <p>Focused on local AI, LLM applications, modular platforms, automation, and reliable technical systems.</p>
         <div class="facts">
           <div class="fact"><strong>Current Focus</strong>Local AI, agent architecture, and AI platform engineering</div>
-          <div class="fact"><strong>Community Build</strong>LocalAI-Angel</div>
-          <div class="fact"><strong>Platform Goal</strong>All-in-one AI platform with GitHub repository modules</div>
+          <div class="fact"><strong>Flagship Build</strong>LocalAI-Angel + Angel Nexus</div>
+          <div class="fact"><strong>Engineering Focus</strong>AI platforms, automation, systems, security & DevOps</div>
           <div class="fact"><strong>Portfolio</strong>github.com/tcdoverlord</div>
         </div>
       </aside>
+    </div>
+
+    <div class="shell">
+      <div class="metric-grid" aria-label="Portfolio highlights">
+        <div class="metric"><strong>AI</strong><span>Local & Agent Systems</span></div>
+        <div class="metric"><strong>DevOps</strong><span>Docker & Automation</span></div>
+        <div class="metric"><strong>Windows</strong><span>Systems & Utilities</span></div>
+        <div class="metric"><strong>AWS</strong><span>Cloud Fundamentals</span></div>
+      </div>
     </div>
 
     <section id="about">
@@ -350,7 +368,7 @@
           </span>
           <span class="skill">
             <span class="skill-icon" aria-hidden="true">
-              <img src="assets/icons/ai/ai-agent-architecture.svg" alt="">
+              <img src="assets/icons/ai/localai.svg" alt="">
               <span class="fallback-icon">AI</span>
             </span>
             <span>LocalAI</span>
@@ -519,16 +537,31 @@
     </section>
     <section id="projects">
       <div class="shell">
-        <div class="section-head"><div class="section-number">03 / PORTFOLIO</div><h2>AI platforms, developer tooling, and technical systems.</h2></div>
+        <div class="section-head"><div class="section-number">03 / PORTFOLIO</div><h2>Selected engineering projects.</h2></div>
+        <p class="hero-copy">A focused selection of public engineering work spanning AI platforms, Windows automation, security tooling, DevOps, cloud development, and developer utilities.</p>
         <div class="project-grid">
-          <article class="card"><div class="tag">Community AI Build</div><h3>LocalAI-Angel</h3><p>A community-oriented LocalAI build integrating the Angel Nexus direction with a local AI platform. Work includes adapting the platform, integrating application services, and building toward a modular all-in-one AI environment.</p></article>
-          <article class="card"><div class="tag">AI Platform Engineering</div><h3>GitHub Repository Module</h3><p>Developing a Nexus module designed to discover, manage, and run GitHub repositories inside an all-in-one AI platform, bringing software projects and AI-assisted workflows into one environment.</p></article>
-          <article class="card"><div class="tag">Local LLM</div><h3>Angel AI Platform</h3><p>Local-first AI architecture exploring persistent memory, structured planning, model integration, tool use, knowledge management, permission-aware execution, testing, and recovery controls.</p></article>
-          <article class="card"><div class="tag">Governed AI</div><h3>Angel Governance Architecture</h3><p>A governed AI engineering approach using structured planning, modular knowledge, risk classification, containment, repair, human authority, and controlled execution.</p></article>
-          <article class="card"><div class="tag">AI Architecture</div><h3>Angel Project — Custom GPT</h3><p>A personalized AI engineering system developed as a custom GPT within ChatGPT. Angel uses structured instructions, project knowledge, continuity controls, governed workflows, and human-directed decision making to provide a consistent AI development partner.</p></article>
-          <article class="card"><div class="tag">Local AI / Agent Systems</div><h3>Angel AI — Personalized AI Platform</h3><p>A USA-built local AI project developing a personalized agent architecture with capabilities similar in broad purpose to modern AI agent harnesses, independently designed around personal workflows, memory, modular tools, local execution, and human control.</p></article>
+          <article class="card"><div class="tag">Flagship AI Platform</div><h3>LocalAI-Angel + Angel Nexus</h3><p>Local-first AI platform work based on LocalAI, with modular tooling, application integration, AI workflows, and a Nexus direction for bringing GitHub software projects into one environment.</p><a class="card-link" href="https://github.com/tcdoverlord/LocalAI-Angel" target="_blank" rel="noopener">View LocalAI-Angel ↗</a></article>
+
+          <article class="card"><div class="tag">Windows Automation</div><h3>Hyper-V VM Backup PowerShell</h3><p>Release-safe Hyper-V backup automation with VM selection, destination safeguards, export workflows, logging, and backup verification.</p><a class="card-link" href="https://github.com/tcdoverlord/HyperV-VM-Backup-PowerShell" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Windows Security</div><h3>OBS Windows Safe Launch</h3><p>Security-focused OBS Studio launcher with plugin integrity validation, version checks, temporary firewall protections, session handling, and cleanup.</p><a class="card-link" href="https://github.com/tcdoverlord/OBS-Windows-Safe-Launch" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Windows Systems</div><h3>Windows Phone Link Calling Repair</h3><p>PowerShell diagnostic and repair tooling for Windows Bluetooth and Microsoft Phone Link connectivity, including automated troubleshooting workflows.</p><a class="card-link" href="https://github.com/tcdoverlord/Windows-Phone-Link-Calling-Repair-Utility" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Windows Utility</div><h3>Windows Volume Limiter</h3><p>Lightweight hearing-protection utility that locks system volume at a user-selected maximum and prevents accidental or software-driven increases.</p><a class="card-link" href="https://github.com/tcdoverlord/Windows-Volume-Limiter" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">USB / PowerShell</div><h3>Windows USB Safe Eject</h3><p>Safety-first removable-drive utility that identifies locking applications, requests graceful closure, verifies the drive is unlocked, and requests a safe Windows eject.</p><a class="card-link" href="https://github.com/tcdoverlord/Windows-USB-Safe-Eject" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">AWS / DevOps</div><h3>DynamoDB Local AWS Development Cloud9</h3><p>Local AWS-style DynamoDB development environment using Docker, Linux tooling, Cloud9 workflows, and containerized infrastructure for backend and DevOps learning.</p><a class="card-link" href="https://github.com/tcdoverlord/DynamoDB-Local-AWS-Development-Cloud9" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Networking</div><h3>HTML CIDR Block IP Calculator</h3><p>Web-based networking utility for subnet planning, IP allocation, and IPv4 address calculations with network and broadcast information.</p><a class="card-link" href="https://github.com/tcdoverlord/HTML-CIDR-Block-IP-Calculator" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Streaming Toolkit</div><h3>Chaturbate OBS Tip Tracker</h3><p>Windows toolkit for Chaturbate models with OBS overlays, Chrome tip tracking, supporter tools, animated games, and customizable Show Packs.</p><a class="card-link" href="https://github.com/tcdoverlord/Chaturbate-OBS-Tip-Tracker" target="_blank" rel="noopener">View project ↗</a></article>
+
+          <article class="card"><div class="tag">Developer Utility</div><h3>HTML Secure Password Generator</h3><p>Offline-capable browser utility for generating strong 256-bit passwords with section regeneration and clipboard support.</p><a class="card-link" href="https://github.com/tcdoverlord/HTML-Secure-Password-Generator" target="_blank" rel="noopener">View project ↗</a></article>
         </div>
-        <div class="hero-actions"><a class="button" href="https://github.com/tcdoverlord" target="_blank" rel="noopener">See the Full GitHub Portfolio ↗</a></div>
+        <p class="portfolio-note">More projects, experiments, and technical documentation are available through the public GitHub portfolio.</p>
+        <div class="hero-actions"><a class="button" href="https://github.com/tcdoverlord" target="_blank" rel="noopener">Explore Full GitHub Portfolio ↗</a></div>
       </div>
     </section>
 
@@ -556,7 +589,7 @@
       <div class="shell">
         <div class="section-head"><div class="section-number">05 / TRAINING</div><h2>Continuous technical and AI development.</h2></div>
         <div class="education-grid">
-          <article class="card"><div class="tag">AI Engineering</div><h3>Hands-On AI Systems Development</h3><p>Independent development across local LLM platforms, AI application architecture, prompt and system-instruction design, agent workflows, persistent memory, knowledge management, model integration, Docker services, APIs, GitHub workflows, testing, and governed AI controls.</p></article>
+          <article class="card"><div class="tag">AI Engineering</div><h3>Hands-On AI Systems Development</h3><p>Hands-on development across local LLM platforms, AI application architecture, prompt and system-instruction design, agent workflows, persistent memory, knowledge management, model integration, Docker services, APIs, GitHub workflows, testing, and controlled execution.</p></article>
           <article class="card"><div class="tag">Cloud & IT</div><h3>AWS & Technical Education</h3><p>AWS Cloud Practitioner training covering EC2, S3, IAM, security, pricing, and the shared responsibility model; Google IT Support Professional Certificate; Cisco training in computer hardware, Windows, Linux, and mobile connectivity; full-stack web development studies.</p></article>
         </div>
       </div>
@@ -565,7 +598,7 @@
     <section id="contact">
       <div class="shell">
         <div class="contact">
-          <div><h2>Let’s build something reliable.</h2><p>For technical support, AI system architecture, automation, and operations opportunities, connect through the public GitHub profile.</p></div>
+          <div><h2>Build practical systems with me.</h2><p>Open to opportunities involving AI engineering, local AI platforms, automation, Windows/Linux systems, DevOps, technical operations, and developer tooling.</p></div>
           <div class="hero-actions"><a class="button" href="https://github.com/tcdoverlord" target="_blank" rel="noopener">Connect on GitHub ↗</a></div>
         </div>
       </div>
