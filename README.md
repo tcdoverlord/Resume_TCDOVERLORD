@@ -1,12 +1,14 @@
-﻿# TCDOVERLORD Technical Portfolio
+# TCDOVERLORD — Professional Technical Résumé
 
-My technical portfolio and interview resume.
+This package contains the refreshed résumé/portfolio website. The design is intentionally professional and restrained: a light background, blue accents, original inline SVG diagrams, local technology icons, and responsive project cards.
 
-## Live website
+## Preview
+Open `index.html` in a browser. Local SVG assets are stored under `assets/icons/`.
 
-https://tcdoverlord.github.io/Resume_TCDOVERLORD/
+## Publish
+Copy the contents of this folder into the existing `Resume_TCDOVERLORD` repository, keeping `.git` intact, then preview and commit the changes.
 
-## Files
+## Featured project
+LocalAI-Angel: https://github.com/tcdoverlord/LocalAI-Angel
 
-- `TCDOVERLORD_Technical_Portfolio.html` — editable source
-- `index.html` — GitHub Pages website entry file
+Skills are described at a practical project-experience level; depth varies by technology. The page distinguishes evolving project work from completed capabilities.
